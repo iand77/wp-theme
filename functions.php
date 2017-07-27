@@ -132,35 +132,5 @@ function add_theme_support_ext() {
 }
 add_action( 'after_setup_theme', 'add_theme_support_ext' );
 
-// Creates Movie Reviews Custom Post Type
-/*
-function movie_reviews_init() {
-    $args = array(
-      'label' => 'Movie Reviews',
-        'public' => true,
-        'show_ui' => true,
-        'capability_type' => 'post',
-        'hierarchical' => false,
-        'rewrite' => array('slug' => 'movie-reviews'),
-        'query_var' => true,
-        'menu_icon' => 'dashicons-video-alt',
-        'supports' => array(
-            'title',
-            'editor',
-            'excerpt',
-            'trackbacks',
-            'custom-fields',
-            'price',
-            'comments',
-            'revisions',
-            'thumbnail',
-            'author',
-            'page-attributes',)
-        );
-    register_post_type( 'movie-reviews', $args );
-}
-add_action( 'init', 'movie_reviews_init' );
-*/
-
 
 
